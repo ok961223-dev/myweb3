@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한밤의 늑대인간</title>
+    <link rel="stylesheet" href="./주말과제.css">
+    <script defer src="./주말과제.js"></script>
+</head>
+<body>
+    <h1>한밤의 늑대인간</h1>
+
+    <label>게임 시작 : </label>
+
+    <input type="button" value="직업 부여" onclick="handleClick();">
+
+
+    <h2>행동순서</h2>
+
+     늑대인간 - 예언자 - 강도 - 말썽쟁이
+
+    <h2>능력</h2>
+
+    늑대인간 : 자신의 차례 때 눈을 떠 다른 늑대인간을 확인한다. 만약 자신 혼자 늑대인간일 경우는 가운데 카드 중 한 장을 확인 할 수 있다.
+    <br>
+    예언자 :가운데 놓여진 카드 3장 중 2장을 보거나, 다른 사람의 카드 한 장을 볼 수 있다
+    <br>
+    강도 : 다른 사람의 카드와 자신의 카드를 바꾼 후 바꾼 카드를 확인할 수 있다. 이때 그 사람의 능력을 쓰진 못 한다.
+    <br>
+    말썽쟁이 : 다른 두 사람의 카드를 서로 바꿀 수 있다. 다만 카드 내용을 확인할 수는 없다.
+
+    <h2>승리 조건</h2>
+     마을 팀 승리 조건<br>
+
+     늑대인간이 존재하는 경우: 늑대인간이 하나 이상 죽어야 한다.
+     <br>
+     늑대인간이 존재하지 않는 경우: (서로에게 1표씩 투표하여서) 아무도 죽지 않아야 한다.
+     <br>
+     <br>
+     늑대인간 팀 승리 조건
+     <br>
+     늑대인간 중 누구도 죽지 않는다.
+    <br>
+    <hr>
+
+    <input type="number" name="idx1" class="num">
+    <input type="number" name="idx2" class="num">
+    <button onclick="handleSwap()">변경</button>
+    
+
+
+    <main></main>
+
+    
+
+    
+    
+</body>
+</html>
